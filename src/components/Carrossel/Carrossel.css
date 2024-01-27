@@ -1,32 +1,32 @@
 .wrapper {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 5%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 5%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .container-carrossel {
-    display: flex;
+  display: flex;
 }
 
 .item {
-    width: 250px;
-    padding: 30px 14px;
+  width: 250px;
+  padding: 30px 14px;
 }
 
 .item img {
-    width: 100%;
-    pointer-events: none;
+  width: 100%;
+  pointer-events: none;
 }
 
 .item p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
 }
 
 .carrossel {
-    cursor: grab;
-    overflow: hidden;
+  cursor: grab;
+  overflow: hidden;
 }

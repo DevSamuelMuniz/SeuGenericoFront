@@ -1,29 +1,28 @@
 .wrapper {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 5%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 5%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
-
 .container-carrossel {
-    display: flex;
+  display: flex;
 }
 
 .item {
-    min-height: 200px;
-    min-width: 200px;
-    padding: 30px 14px;
+  min-height: 200px;
+  min-width: 200px;
+  padding: 30px 14px;
 }
 
 .item img {
-    width: 100%;
-    pointer-events: none;
+  width: 100%;
+  pointer-events: none;
 }
 
 .carrossel {
-    cursor: grab;
-    overflow: hidden;
+  cursor: grab;
+  overflow: hidden;
 }
