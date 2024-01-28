@@ -6,3 +6,26 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+
+    padding: 0.8rem 1rem;
+}
+
+.content h1{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.content img{
+    width: 13px;
+}

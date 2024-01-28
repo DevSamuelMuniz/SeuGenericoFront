@@ -4,7 +4,7 @@ import magnify from "../../assets/search-magnify.svg";
 
 function Pesquisa({ remedysState, setRemedysState }) {
   let typingTimer;
-  const doneTypingInterval = 100; 
+  const doneTypingInterval = 100;
 
   const fetchData = async () => {
     const medicamentoNome = document.getElementById("medicamento").value;
@@ -23,7 +23,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
   };
 
   const handleInput = () => {
-    clearTimeout(typingTimer); 
+    clearTimeout(typingTimer);
 
     typingTimer = setTimeout(function () {
       fetchData();
@@ -31,8 +31,8 @@ function Pesquisa({ remedysState, setRemedysState }) {
   };
 
   const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      clearTimeout(typingTimer); 
+    if (event.key === "Enter") {
+      clearTimeout(typingTimer);
       fetchData();
     }
   };
@@ -49,7 +49,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
             onInput={handleInput}
             onKeyDown={handleKeyDown}
           />
-           <span className="input-img" onClick={fetchData}>
+          <span className="input-img" onClick={fetchData}>
             <img src={magnify} alt="Botão de pesquisar em formato de Lupa" />
           </span>
         </div>
