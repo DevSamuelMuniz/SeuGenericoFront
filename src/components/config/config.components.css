@@ -7,8 +7,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
-a{
+.link-config{
     text-decoration: none;
+    width: 100%;
+}
+
+.content:hover{
+    scale: 1.02;
+
 }
 
 .content{
@@ -16,6 +22,7 @@ a{
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
+    transition: 0.2s ease-in-out;
 
     padding: 0.8rem 1rem;
 }

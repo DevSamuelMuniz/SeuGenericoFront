@@ -4,7 +4,7 @@ import setaImg from '../../assets/seta.png';
 
 function ConfigComponent({ titulo, link }) {
   return (
-    <a href={link}>
+    <a className='link-config' href={link}>
       <div className="content">
         <h1>{titulo}</h1>
         <img

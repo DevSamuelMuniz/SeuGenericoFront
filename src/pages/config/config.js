@@ -9,15 +9,15 @@ function Config() {
   return (
     <main>
       <Cabecalho />
-      <ConfigComponent link="/config/Modo-de-exibição" titulo="Modo de Exibição"/>
-      <ConfigComponent link="/config/idioma" titulo="Idioma"/>
-      <ConfigComponent link="/config/região" titulo="Região"/>
-      <ConfigComponent link="/config" titulo="Notificações"/>
-      <ConfigComponent link="/config" titulo="Limpar Histórico"/>
-      <ConfigComponent link="/config" titulo="FAQ"/>
-      <ConfigComponent link="/config" titulo="Central de Ajuda"/>
-      <ConfigComponent link="/config" titulo="Avalie-nos"/>
-      <ConfigComponent link="/config" titulo="Política de Privacidade"/>
+      <ConfigComponent link="/Modo-de-exibição" titulo="Modo de Exibição"/>
+      <ConfigComponent link="/Idioma" titulo="Idioma"/>
+      <ConfigComponent link="/Região" titulo="Região"/>
+      <ConfigComponent link="/Notificação" titulo="Notificações"/>
+      <ConfigComponent link="/Limpar-Histórico" titulo="Limpar Histórico"/>
+      <ConfigComponent link="/FAQ" titulo="FAQ"/>
+      <ConfigComponent link="/Central-de-Ajuda" titulo="Central de Ajuda"/>
+      <ConfigComponent link="/Avalie-nos" titulo="Avalie-nos"/>
+      <ConfigComponent link="/Política-de-Privacidade" titulo="Política de Privacidade"/>
       <Navbar />
     </main>
   );
