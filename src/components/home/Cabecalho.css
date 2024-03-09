@@ -11,3 +11,27 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.mini-logo{
+  text-decoration: none;
+  display: flex;
+  gap: 4px;
+}
+
+.perfil-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.perfil-wrapper .cumprimento {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #BBB;
+}
+
+.perfil-wrapper .nome {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #494949;
+}

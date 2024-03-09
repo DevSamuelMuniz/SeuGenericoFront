@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import homeIcon from "../../assets/home-icon-selected.svg";
-import historicoIcon from "../../assets/historico-icon.svg";
-import acessibilidadeIcon from "../../assets/acessibilidade-icon.svg";
+import favoritosIcon from "../../assets/favoritos-icon.svg";
+import PesquisaVoz from "./PesquisaVoz";
 
 function Navbar() {
   return (
@@ -21,22 +21,17 @@ function Navbar() {
         </div>
 
         <div className="icon">
-          <a href="historico">
-            <img
-              src={historicoIcon}
-              alt="Botão Histórico em formato de relógio"
-            ></img>
-            <p>Histórico</p>
-          </a>
+            <PesquisaVoz></PesquisaVoz>
         </div>
 
         <div className="icon">
-          <a href="acessibilidade">
+          <a href="favoritos">
             <img
-              src={acessibilidadeIcon}
-              alt="Botão de Acessibilidade em formato de uma pessoa"
+              className="favorito-icon"
+              src={favoritosIcon}
+              alt="ícone de favoritos"
             ></img>
-            <p>Acessibilidade</p>
+            <p>Favoritos</p>
           </a>
         </div>
       </div>

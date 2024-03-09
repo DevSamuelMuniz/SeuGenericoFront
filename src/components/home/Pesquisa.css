@@ -16,11 +16,11 @@
 
 .input-wrapper {
   width: 100%;
-  border: 1.5px solid #5a5a5a;
-  border-radius: 50px;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #E7E7E7;
 }
 
 .barra-pesquisa {
@@ -31,7 +31,8 @@
   color: rgba(90, 90, 90, 60);
   width: 100%;
   padding: 15px 20px;
-  border-radius: 50px;
+  border-radius: 5px;
+  background-color: #E7E7E7;
 }
 
 .barra-pesquisa:focus {

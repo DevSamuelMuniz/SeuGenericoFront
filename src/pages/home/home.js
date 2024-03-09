@@ -21,7 +21,6 @@ function Home() {
     <main className="principal">
       <Cabecalho />
       <Pesquisa remedysState={remedysState} setRemedysState={setRemedysState} />
-      <PesquisaVoz />
       <Navbar />
 
       {remedysState ? (

@@ -5,6 +5,7 @@ import Microfone from "../../assets/microfone.svg";
 function PesquisaVoz() {
   const [dadosGravados, setDadosGravados] = useState(null);
   const [ouvindo, setOuvindo] = useState(false);
+  const [gravacaoAtiva, setGravacaoAtiva] = useState(false);
 
   const iniciarGravacao = () => {
     const recognition = new window.webkitSpeechRecognition();
@@ -24,6 +25,7 @@ function PesquisaVoz() {
       setOuvindo(false);
       preencherInput(vozCapturada); // Chama a função para preencher o campo de input com o texto capturado
       realizarPesquisa(vozCapturada); // Chama a função para realizar a pesquisa com o texto capturado
+      setGravacaoAtiva(true);
     };
 
     recognition.start();
@@ -44,11 +46,11 @@ function PesquisaVoz() {
   return (
     <div className="pesquisa-voz">
       <div className="pesquisa-voz-container">
+        <span className="mic-active"></span>
         <button
-          className={ouvindo ? "pesquisa-voz-btn ouvindo" : "pesquisa-voz-btn"}
+          className={ouvindo ? "pesquisa-voz-btn-active" : "pesquisa-voz-btn"}
           onClick={iniciarGravacao}
         >
-          <span>{ouvindo ? "Escutando" : "Pesquisa por voz"}</span>
           <img src={Microfone} alt="Ícone em formato de Microfone" />
         </button>
       </div>

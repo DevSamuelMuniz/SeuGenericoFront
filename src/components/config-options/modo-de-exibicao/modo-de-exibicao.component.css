@@ -14,10 +14,3 @@
     align-items: center;
     flex-direction: column;
 }
-
-button:hover {
-    background-color: white;
-    color: orangered;
-    border: 2px solid orangered;
-    padding: 0.89rem 0;
-}
