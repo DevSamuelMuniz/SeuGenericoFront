@@ -1,18 +1,15 @@
 import "./home.css";
 
-import Cabecalho from "../../components/home/Cabecalho";
-import Pesquisa from "../../components/home/Pesquisa";
-import PesquisaVoz from "../../components/home/PesquisaVoz";
-import CategoriaNome1 from "../../components/home/CategoriaNome1";
+import Cabecalho from "../../components/home/Cabecalho/Cabecalho";
+import Pesquisa from "../../components/home/Pesquisa/Pesquisa";
+import Categoria from "../../components/home/Categoria/Categoria";
 import Carrossel1 from "../../components/home/Carrossel1";
-import CategoriaNome2 from "../../components/home/CategoriaNome2";
 import Carrossel2 from "../../components/home/Carrossel2";
-import CategoriaNome3 from "../../components/home/CategoriaNome3";
 import Carrossel3 from "../../components/home/Carrossel3";
 import { useState } from "react";
 import Title from "../../components/Title/Title";
 import Carrossel from "../../components/Carrossel/Carrossel";
-import Navbar from "../../components/home/Navbar";
+import Navbar from "../../components/home/Navbar/Navbar";
 
 function Home() {
   const [remedysState, setRemedysState] = useState(null);
@@ -21,6 +18,15 @@ function Home() {
     <main className="principal">
       <Cabecalho />
       <Pesquisa remedysState={remedysState} setRemedysState={setRemedysState} />
+
+      {/* Adição dos elementos abaixo apenas para efeito de teste - neto */}
+      <Categoria categoria="Mais populares">
+      </Categoria>
+      <Carrossel1></Carrossel1>
+      <Categoria categoria="Analgésicos"></Categoria>
+      <Carrossel2></Carrossel2>
+
+
       <Navbar />
 
       {remedysState ? (

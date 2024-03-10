@@ -1,8 +1,8 @@
 import React from 'react';
 import "./config.css";
 
-import Cabecalho from "../../components/home/Cabecalho";
-import Navbar from "../../components/home/Navbar";
+import Cabecalho from "../../components/home/Cabecalho/Cabecalho";
+import Navbar from "../../components/home/Navbar/Navbar";
 import ConfigComponent from "../../components/config/config.components";
 
 function Config() {
