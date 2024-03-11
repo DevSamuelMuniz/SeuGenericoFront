@@ -1,0 +1,46 @@
+.medicamento-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.medicamento-card{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.medicamento-img {
+    width: 126px;
+    height: 125px;
+    background-color: #d9d9d9;
+}
+
+.medicamento-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.medicamento-info h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #DB471B;
+}
+
+.medicamento-info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.medicamento-info-details p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5A5A5A;
+}

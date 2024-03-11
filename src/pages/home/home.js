@@ -10,6 +10,8 @@ import { useState } from "react";
 import Title from "../../components/Title/Title";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import Navbar from "../../components/home/Navbar/Navbar";
+import SearchCategoria from "../../components/search/SearchCategoria/SearchCategoria";
+import MedicamentosList from "../../components/search/MedicamentosList/MedicamentosList";
 
 function Home() {
   const [remedysState, setRemedysState] = useState(null);
@@ -19,30 +21,18 @@ function Home() {
       <Cabecalho />
       <Pesquisa remedysState={remedysState} setRemedysState={setRemedysState} />
 
-      {/* Adição dos elementos abaixo apenas para efeito de teste - neto */}
-      <Categoria categoria="Mais populares">
-      </Categoria>
-      <Carrossel1></Carrossel1>
-      <Categoria categoria="Analgésicos"></Categoria>
-      <Carrossel2></Carrossel2>
-
 
       <Navbar />
 
       {remedysState ? (
         <>
-          <Title categoria={"Medicamentos Ativos"} />
-          <Carrossel
+          <SearchCategoria/>
+          <MedicamentosList
             show={"ativo"}
             remedysState={remedysState}
             setRemedysState={setRemedysState}
           />
-          <Title categoria={"Medicamentos Inativos"} />
-          <Carrossel
-            show={"inativo"}
-            remedysState={remedysState}
-            setRemedysState={setRemedysState}
-          />
+          
         </>
       ) : null}
     </main>

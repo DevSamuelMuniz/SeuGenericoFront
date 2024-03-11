@@ -1,0 +1,14 @@
+.search-categoria-container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .search-categoria-nome {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #db471b;
+  }
