@@ -1,0 +1,41 @@
+.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  position: fixed;
+  top: 0;
+  background-color: #fafafa;
+  z-index: 999;
+}
+
+.container-cabecalho {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-logo{
+  text-decoration: none;
+  display: flex;
+  gap: 4px;
+}
+
+.perfil-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.perfil-wrapper .cumprimento {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #BBB;
+}
+
+.perfil-wrapper .nome {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #494949;
+}

@@ -1,0 +1,73 @@
+.pesquisa-voz {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.pesquisa-voz-container {
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesquisa-voz-btn {
+  position: absolute;
+  top: -65px;
+  
+  width: 80px;
+  height: 80px;
+  background-color: #db471b;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+}
+
+.pesquisa-voz-btn:hover {
+  scale: 1.1;
+}
+
+.pesquisa-voz-btn-active {
+  position: absolute;
+  top: -65px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #db471b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+  animation: recording 2s;
+  animation-iteration-count: infinite;
+  z-index: 999;
+}
+
+/* .mic-active {
+  position: absolute;
+  top: -75px;
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50%);
+  background-color: #FC7F52;
+} */
+
+@keyframes recording {
+  0%{
+    background-color: #db471b;
+  }
+  50% {
+    background-color: #FC7F52;
+    scale: 1.1;
+  }
+  100% {
+    background-color: #db471b;
+  }
+}
