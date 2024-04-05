@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/home";
+import Home from "./pages/home/home";
 import NotFound from "./pages/NotFound/NotFound";
 import Config from "./pages/config/config";
 import ModoDeExibicao from "./pages/config-options/modo-de-exibicao/modo-de-exibicao";
