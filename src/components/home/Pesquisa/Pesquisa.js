@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Pesquisa.css";
 import magnify from "../../../assets/search-magnify.svg";
 

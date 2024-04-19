@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import "./PesquisaVoz.css";
 import Microfone from "../../../assets/microfone.svg";
-import { Navigate, redirect } from "react-router-dom";
 
 function PesquisaVoz() {
-  const [dadosGravados, setDadosGravados] = useState(null);
+  const [setDadosGravados] = useState(null);
   const [ouvindo, setOuvindo] = useState(false);
-  const [gravacaoAtiva, setGravacaoAtiva] = useState(false);
+  const [setGravacaoAtiva] = useState(false);
 
   const iniciarGravacao = () => {
     const recognition = new window.webkitSpeechRecognition();
     recognition.lang = "pt-BR";
-    
+
     recognition.onstart = () => {
       setOuvindo(true);
     };
-    
+
     recognition.onresult = (event) => {
       const vozCapturada = event.results[0][0].transcript;
       const dadosJSON = {
