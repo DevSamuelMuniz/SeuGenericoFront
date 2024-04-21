@@ -11,7 +11,7 @@ function Cabecalho() {
           <img src={logo} alt="Logo Seu Genérico" />
           <div className="perfil-wrapper">
             <p className="cumprimento">Boa Tarde,</p>
-            <p className="nome">Luiza</p>
+            <p className="nome">Usuário</p>
           </div>
         </a>
         <a className="config-btn" href="config">
