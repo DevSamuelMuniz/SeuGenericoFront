@@ -11,7 +11,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
 
     try {
       const response = await fetch(
-        `sg-back.azurewebsites.net/getGeneric/getGeneric/${medicamentoNome}`
+        `https://2075-191-235-34-75.ngrok-free.app/getGeneric/getGeneric/${medicamentoNome}`
       );
       const data = await response.json();
       console.log(data);
