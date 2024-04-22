@@ -11,7 +11,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/getGeneric/${medicamentoNome}`
+        `sg-back.azurewebsites.net/getGeneric/getGeneric/${medicamentoNome}`
       );
       const data = await response.json();
       console.log(data);
