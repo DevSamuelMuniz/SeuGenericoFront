@@ -6,12 +6,15 @@ function Pesquisa({ remedysState, setRemedysState }) {
   let typingTimer;
   const doneTypingInterval = 100;
 
+  const ngrokURL = process.env.REACT_APP_NGROK_URL;
+
+
   const fetchData = async () => {
     const medicamentoNome = document.getElementById("medicamento").value;
 
     try {
       const response = await fetch(
-        `https://2075-191-235-34-75.ngrok-free.app/getGeneric/${medicamentoNome}`
+        `${ngrokURL}/getGeneric/${medicamentoNome}`
       );
       const data = await response.json();
       console.log(data);
@@ -21,7 +24,6 @@ function Pesquisa({ remedysState, setRemedysState }) {
       setRemedysState(null);
     }
   };
-
   const handleInput = () => {
     clearTimeout(typingTimer);
 
