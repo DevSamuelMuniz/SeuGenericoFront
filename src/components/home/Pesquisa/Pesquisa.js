@@ -14,7 +14,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
 
     try {
       const response = await fetch(
-        `${ngrokURL}/getGeneric/${medicamentoNome}`
+        `https://315b-191-235-34-75.ngrok-free.app/getGeneric/${medicamentoNome}`
       );
       const data = await response.json();
       console.log(data);
