@@ -1,46 +1,66 @@
 .medicamento-container {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.medicamento-card{
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 30px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    text-decoration: none;
+.medicamento-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
 }
 
 .medicamento-img {
-    width: 126px;
-    height: 125px;
-    background-color: #d9d9d9;
+  width: 126px;
+  height: 125px;
+  background-color: #d9d9d9;
 }
 
 .medicamento-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .medicamento-info h1 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #DB471B;
+  font-size: 20px;
+  font-weight: 600;
+  color: #db471b;
 }
 
 .medicamento-info-details {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  gap: 2px;
 }
 
 .medicamento-info-details p {
-    font-size: 12px;
-    font-weight: 500;
-    color: #5A5A5A;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5a5a5a;
 }
+
+.bula-circulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #db471b;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 100%;
+}
+
+.image-bula {
+  width: 1.6rem;
+  margin-left: 0.4rem;
+  margin-top: .4rem;
+  filter: brightness(0) invert(1);
+}
+
