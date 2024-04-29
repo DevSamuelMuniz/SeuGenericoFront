@@ -10,7 +10,7 @@ function Cabecalho() {
         <a className="mini-logo" href="/">
           <img src={logo} alt="Logo Seu Genérico" />
           <div className="perfil-wrapper">
-            <p className="cumprimento">Boa Tarde</p>
+            <p className="cumprimento">Bem-vindo</p>
             <p className="nome">Usuário</p>
           </div>
         </a>

@@ -3,9 +3,10 @@ import "./PesquisaVoz.css";
 import Microfone from "../../../assets/microfone.svg";
 
 function PesquisaVoz() {
-  const [setDadosGravados] = useState(null);
+  const [dadosGravados, setDadosGravados] = useState(null); // Fixed state name
+
   const [ouvindo, setOuvindo] = useState(false);
-  const [setGravacaoAtiva] = useState(false);
+  const [gravacaoAtiva, setGravacaoAtiva] = useState(false); // Fixed state name
 
   const iniciarGravacao = () => {
     const recognition = new window.webkitSpeechRecognition();
@@ -19,12 +20,12 @@ function PesquisaVoz() {
       const vozCapturada = event.results[0][0].transcript;
       const dadosJSON = {
         textoCapturado: vozCapturada,
-        // Outros campos que você deseje adicionar
+        // Other fields you may want to add
       };
-      setDadosGravados(dadosJSON); // Salva os dados capturados como um objeto JSON no estado
+      setDadosGravados(dadosJSON);
       setOuvindo(false);
-      preencherInput(vozCapturada); // Chama a função para preencher o campo de input com o texto capturado
-      realizarPesquisa(vozCapturada); // Chama a função para realizar a pesquisa com o texto capturado
+      preencherInput(vozCapturada);
+      realizarPesquisa(vozCapturada);
       setGravacaoAtiva(true);
     };
 
@@ -34,13 +35,12 @@ function PesquisaVoz() {
   const preencherInput = (texto) => {
     const inputPesquisa = document.getElementById("medicamento");
     if (inputPesquisa) {
-      inputPesquisa.value = texto; // Preenche o campo de input com o texto capturado
+      inputPesquisa.value = texto;
     }
   };
 
   const realizarPesquisa = (textoPesquisa) => {
-    // Adicione aqui a lógica para realizar a pesquisa com o texto capturado
-    // Por exemplo: realizar a busca ao disparar um evento de mudança (change) no input ou chamando a função que realiza a busca
+    // Implement search logic here
   };
 
   return (
