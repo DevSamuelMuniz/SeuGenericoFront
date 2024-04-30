@@ -21,21 +21,15 @@ function Pesquisa({ remedysState, setRemedysState }) {
   };
 
   useEffect(() => {
-    // Define um intervalo para chamar a função fetchData a cada 5 segundos
     const intervalId = setInterval(fetchData, doneTypingInterval);
 
-    // Limpa o intervalo quando o componente é desmontado para evitar vazamento de memória
     return () => clearInterval(intervalId);
-  }, []); // Executa o efeito apenas uma vez, após a montagem inicial do componente
+  }, []); 
 
   const handleInput = () => {
-    // Esta função ainda é necessária para tratar a entrada do usuário
-    // Se desejar, você pode manter a lógica para lidar com a entrada do usuário aqui
   };
 
   const handleKeyDown = (event) => {
-    // Esta função ainda é necessária para tratar a tecla Enter pressionada pelo usuário
-    // Se desejar, você pode manter a lógica para lidar com a tecla Enter aqui
   };
 
   return (
