@@ -10,8 +10,6 @@ function PesquisaVoz() {
   const iniciarGravacao = () => {
     const recognition = new window.webkitSpeechRecognition();
     recognition.lang = "pt-BR";
-    recognition.interimResults = true;
-    recognition.continuous = false;
 
     recognition.onstart = () => {
       setOuvindo(true);
@@ -26,7 +24,6 @@ function PesquisaVoz() {
       setDadosGravados(dadosJSON);
       setOuvindo(false);
       preencherInput(vozCapturada);
-      await realizarPesquisa(vozCapturada); // Wait for the search to complete
       setGravacaoAtiva(true);
     };
 
@@ -40,17 +37,7 @@ function PesquisaVoz() {
     }
   };
 
-  const realizarPesquisa = async (textoPesquisa) => {
-    try {
-      // Replace this with your actual API endpoint
-      const response = await fetch(`https://example.com/api/search?query=${textoPesquisa}`);
-      const data = await response.json();
-      console.log(data);
-      // Process the data or update state as needed
-    } catch (err) {
-      console.error("Erro ao buscar dados da API:", err);
-    }
-  };
+
 
   return (
     <div className="pesquisa-voz">

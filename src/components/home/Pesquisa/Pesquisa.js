@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Pesquisa.css";
 import magnify from "../../../assets/search-magnify.svg";
 
 function Pesquisa({ remedysState, setRemedysState }) {
-  let typingTimer;
-  const doneTypingInterval = 100;
-
+  const doneTypingInterval = 1000; 
   const fetchData = async () => {
     const medicamentoNome = document.getElementById("medicamento").value;
 
@@ -21,19 +19,23 @@ function Pesquisa({ remedysState, setRemedysState }) {
       setRemedysState(null);
     }
   };
-  const handleInput = () => {
-    clearTimeout(typingTimer);
 
-    typingTimer = setTimeout(function () {
-      fetchData();
-    }, doneTypingInterval);
+  useEffect(() => {
+    // Define um intervalo para chamar a função fetchData a cada 5 segundos
+    const intervalId = setInterval(fetchData, doneTypingInterval);
+
+    // Limpa o intervalo quando o componente é desmontado para evitar vazamento de memória
+    return () => clearInterval(intervalId);
+  }, []); // Executa o efeito apenas uma vez, após a montagem inicial do componente
+
+  const handleInput = () => {
+    // Esta função ainda é necessária para tratar a entrada do usuário
+    // Se desejar, você pode manter a lógica para lidar com a entrada do usuário aqui
   };
 
   const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      clearTimeout(typingTimer);
-      fetchData();
-    }
+    // Esta função ainda é necessária para tratar a tecla Enter pressionada pelo usuário
+    // Se desejar, você pode manter a lógica para lidar com a tecla Enter aqui
   };
 
   return (
