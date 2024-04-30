@@ -48,7 +48,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
             onInput={handleInput}
             onKeyDown={handleKeyDown}
           />
-          <span className="input-img" onClick={fetchData}>
+          <span id="buscar" className="input-img" onClick={fetchData}>
             <img src={magnify} alt="Botão de pesquisar em formato de Lupa" />
           </span>
         </div>
