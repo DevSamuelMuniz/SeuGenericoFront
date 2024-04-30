@@ -25,7 +25,7 @@ function Navbar() {
         </div>
 
         <div className="icon">
-          <a href="favoritos">
+          <a href="/">
             <img
               className="favorito-icon"
               src={favoritosIcon}
