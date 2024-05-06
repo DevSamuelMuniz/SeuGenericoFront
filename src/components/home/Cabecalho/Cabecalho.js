@@ -15,7 +15,7 @@ function Cabecalho() {
           </div>
         </a>
         <a className="config-btn" href="/">
-          <img src={config} alt="Botão de configurações" />
+          {/* <img src={config} alt="Botão de configurações" /> */}
         </a>
       </div>
     </header>
