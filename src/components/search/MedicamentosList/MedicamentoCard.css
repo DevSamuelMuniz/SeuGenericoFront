@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
   margin-bottom: 20px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -45,21 +44,4 @@
   color: #5a5a5a;
 }
 
-.bula-circulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #db471b;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 1rem;
-  border-radius: 100%;
-}
-
-.image-bula {
-  width: 1.4rem;
-  margin-left: 0.4rem;
-  margin-top: .4rem;
-  filter: brightness(0) invert(1);
-}
 

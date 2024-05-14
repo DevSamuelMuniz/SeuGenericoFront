@@ -8,7 +8,7 @@ function Cabecalho() {
     <header className="cabecalho">
       <div className="container-cabecalho">
          <a className="mini-logo" href="/"> {/*ajustar rota */}
-          <img src={logo} alt="Logo Seu Genérico" />
+          <img src={logo} alt="Logo marca" />
           <div className="perfil-wrapper">
             <p className="cumprimento">Bem-vindo</p>
             <p className="nome">Usuário</p>

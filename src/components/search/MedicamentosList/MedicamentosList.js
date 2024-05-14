@@ -28,9 +28,6 @@ const MedicamentosList = ({ show, remedysState, setRemedysState }) => {
                     <p>{`Preço médio: ` + preco}</p>
                   </div>
                 </div>
-                <div className="bula-circulo">
-                  <a href={bula_link}><img className="image-bula" src={Bula} alt="bula" /></a>
-                </div>
               </NavLink>
             </div>
           ) : null
