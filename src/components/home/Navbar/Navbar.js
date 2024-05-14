@@ -14,7 +14,7 @@ function Navbar() {
           <a href="/">
             <img
               src={homeIcon}
-              alt="Botão Tela inicial em formato de casa"
+              alt="voltar para o início"
             ></img>
             <p>Tela inicial</p>
           </a>
@@ -29,7 +29,7 @@ function Navbar() {
             <img
               className="favorito-icon"
               src={favoritosIcon}
-              alt="ícone de favoritos"
+              alt="ir para os favoritos"
             ></img>
             <p>Favoritos</p>
           </a>

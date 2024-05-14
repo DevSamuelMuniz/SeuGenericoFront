@@ -47,7 +47,7 @@ function PesquisaVoz() {
           className={ouvindo ? "pesquisa-voz-btn-active" : "pesquisa-voz-btn"}
           onClick={iniciarGravacao}
         >
-          <img src={Microfone} alt="Ícone em formato de Microfone" />
+          <img src={Microfone} alt="Pesquisar por voz" />
         </button>
       </div>
     </div>

@@ -40,12 +40,12 @@ function Pesquisa({ remedysState, setRemedysState }) {
             id="medicamento"
             className="barra-pesquisa"
             type="text"
-            placeholder="Pesquisar por texto"
+            placeholder="Pesquisa por texto"
             onInput={handleInput}
             onKeyDown={handleKeyDown}
           />
           <span id="buscar" className="input-img" onClick={fetchData}>
-            <img src={magnify} alt="pesquisar por voz" />
+            <img src={magnify} alt="pesquisar por texto" />
           </span>
         </div>
       </div>
