@@ -45,7 +45,7 @@ function Pesquisa({ remedysState, setRemedysState }) {
             onKeyDown={handleKeyDown}
           />
           <span id="buscar" className="input-img" onClick={fetchData}>
-            <img src={magnify} alt="pesquisar por texto" />
+            <img className="img-lupa" src={magnify} alt="pesquisar por texto" />
           </span>
         </div>
       </div>
