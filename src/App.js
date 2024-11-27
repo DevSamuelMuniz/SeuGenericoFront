@@ -8,8 +8,11 @@ import {
 import Home from "./pages/home/home";
 import SplashScreen from "./pages/splashScreen/splashScreen.js";
 
+import "./App.css"
+
+
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     setTimeout(() => {
