@@ -3,7 +3,7 @@ import homeIcon from "../../../assets/home-icon-selected.svg";
 import favoritosIcon from "../../../assets/favoritos-icon.svg";
 import PesquisaVoz from "../PesquisaVoz/PesquisaVoz";
 
-function Navbar() {
+function Navbar({setMedicamentoNome}) {
   return (
     <div
       className="navbar"
@@ -21,7 +21,7 @@ function Navbar() {
         </div>
 
         <div className="icon">
-            <PesquisaVoz></PesquisaVoz>
+        <PesquisaVoz setMedicamentoNome={setMedicamentoNome} />
         </div>
 
         <div className="icon">

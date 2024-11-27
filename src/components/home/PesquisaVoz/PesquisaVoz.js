@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "./PesquisaVoz.css";
 import Microfone from "../../../assets/microfone.svg";
 
-function PesquisaVoz() {
-  const [dadosGravados, setDadosGravados] = useState(null); // Fixed state name
+function PesquisaVoz({ setMedicamentoNome }) {
   const [ouvindo, setOuvindo] = useState(false);
-  const [gravacaoAtiva, setGravacaoAtiva] = useState(false); // Fixed state name
 
   const iniciarGravacao = () => {
     const recognition = new window.webkitSpeechRecognition();
@@ -17,27 +15,16 @@ function PesquisaVoz() {
 
     recognition.onresult = async (event) => {
       const vozCapturada = event.results[0][0].transcript;
-      const dadosJSON = {
-        textoCapturado: vozCapturada,
-        // Other fields you may want to add
-      };
-      setDadosGravados(dadosJSON);
+      setMedicamentoNome(vozCapturada);
       setOuvindo(false);
-      preencherInput(vozCapturada);
-      setGravacaoAtiva(true);
+    };
+    recognition.onerror = (event) => {
+      console.error("Erro ao reconhecer a fala:", event.error);
+      setOuvindo(false);
     };
 
     recognition.start();
   };
-
-  const preencherInput = (texto) => {
-    const inputPesquisa = document.getElementById("medicamento");
-    if (inputPesquisa) {
-      inputPesquisa.value = texto;
-    }
-  };
-
-
 
   return (
     <div className="pesquisa-voz">

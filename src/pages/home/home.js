@@ -9,20 +9,20 @@ import MedicamentosList from "../../components/search/MedicamentosList/Medicamen
 
 function Home() {
   const [remedysState, setRemedysState] = useState(null);
+  const [medicamentoNome, setMedicamentoNome] = useState("");
 
   return (
     <main className="principal">
       <Cabecalho />
-      <Pesquisa remedysState={remedysState} setRemedysState={setRemedysState} />
+      <Pesquisa setMedicamentoNome={setMedicamentoNome} medicamentoNome={medicamentoNome} remedysState={remedysState} setRemedysState={setRemedysState} />
 
 
-      <Navbar />
+      <Navbar setMedicamentoNome={setMedicamentoNome} />
 
       {remedysState ? (
         <>
           <SearchCategoria/>
           <MedicamentosList
-            show={"ativo"}
             remedysState={remedysState}
             setRemedysState={setRemedysState}
           />
