@@ -9,7 +9,7 @@ function Pesquisa({ remedysState, setRemedysState, medicamentoNome, setMedicamen
   const fetchData = async (query, page) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/produtos?nome=${query}&page=${page}&limit=${resultsPerPage}`
+        `https://seugenericoback.onrender.com/produtos?nome=${query}&page=${page}&limit=${resultsPerPage}`
       );
 
       const text = await response.text();
